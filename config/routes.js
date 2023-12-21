@@ -20,7 +20,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
-
+  'GET /totalEmissions': { controller: 'EmissionsController', action: 'totalEmissions' },
+  'GET /currentEpochEmissions': { controller: 'EmissionsController', action: 'currentEpochEmissions' }
 
   /***************************************************************************
   *                                                                          *
